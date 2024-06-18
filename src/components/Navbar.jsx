@@ -32,6 +32,7 @@ const Navbar = () => {
                 { itemKey: '/userTasks', text: '用户任务查询', icon: '🏠' },
             ],
         },
+        { itemKey: '/greenSock', text: 'GreenSock', icon: '🍀' },
         // { itemKey: "/theme", text: '切换主题', icon: '🌗' },
     ]
 

@@ -34,3 +34,56 @@
   line-height: 16px;
   color: var(--semi-color-text-2);
 }
+.semi-layout-content {
+  padding: 24px;
+}
+.App,
+.box {
+  width: 100%;
+  height: 100%;
+}
+.semi-tabs-pane {
+  overflow-y: scroll;
+}
+.App .easeFir form {
+  display: flex;
+  flex-direction: column;
+}
+.App .easeFir form > * + * {
+  margin-top: 1rem;
+}
+.App .easeFir section {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.App .easeFir svg {
+  min-width: 200px;
+  width: 50%;
+}
+.App .easeSec svg {
+  width: 14vw;
+  max-height: 80vh;
+  max-width: 500px;
+  opacity: 0;
+}
+.App .easeSec circle {
+  fill: #88ce02;
+}
+.App .easeSec .shadow {
+  opacity: 0.2;
+}
+.App .easeThi .box {
+  width: 15vw;
+  height: 15vw;
+  aspect-ratio: 1 / 1;
+  max-width: 50px;
+  max-height: 50px;
+  background-color: #88ce02;
+  display: inline-block;
+  margin: 2vw;
+  border-radius: 3px;
+}

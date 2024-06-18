@@ -32,6 +32,10 @@ const routes = [
       {
         path: 'userTasks',
         element: lazyLoad(() => import('../page/UserTasks'))
+      },
+      {
+        path: 'greenSock',
+        element: lazyLoad(() => import('../page/GreenSock'))
       }
     ]
   },
