@@ -3,6 +3,10 @@ import { IconSemiLogo } from '@douyinfe/semi-icons';
 import { IconDescriptions, IconTree, IconAvatar } from '@douyinfe/semi-icons-lab';
 
 const Navbar = () => {
+    // 默认
+    const body = document.body;
+    body.setAttribute('theme-mode', 'dark');
+
     const switchMode = (data) => {
         if(data.itemKey === "theme") {
             const body = document.body;
@@ -16,7 +20,7 @@ const Navbar = () => {
 
     return (
         <Nav
-            bodyStyle={{ height: 320 }}
+            bodyStyle={{ height: 780 }}
             items={[
                 { itemKey: 'user', text: '用户管理', icon: <IconAvatar /> },
                 { itemKey: 'union', text: '活动管理', icon: <IconDescriptions /> },
@@ -28,10 +32,10 @@ const Navbar = () => {
                 },
                 { itemKey: "theme", text: '切换主题', icon: '💡' },
             ]}
-            header={{
-                logo: <IconSemiLogo style={{ height: '36px', fontSize: 36 }} />,
-                text: 'Semi 运营后台'
-            }}
+            // header={{
+            //     logo: <IconSemiLogo style={{ height: '36px', fontSize: 36 }} />,
+            //     text: 'Semi 运营后台'
+            // }}
             footer={{
                 collapseButton: true,
             }}
