@@ -6,9 +6,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const navigate = useNavigate();
-    // 默认
-    const body = document.body;
-    body.setAttribute('theme-mode', 'dark');
     // const switchMode = (data) => {
     //     if(data.text === "theme") {
     //         const body = document.body;

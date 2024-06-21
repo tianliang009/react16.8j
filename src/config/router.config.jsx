@@ -10,6 +10,10 @@ const routes = [
     // element: <Login />
   },
   {
+    path: '/visualization',
+    element: lazyLoad(() => import('../page/Visualization/index'))
+  },
+  {
     path: '/',
     element: <Main />,
     children: [
